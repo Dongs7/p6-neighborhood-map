@@ -1,0 +1,298 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* Common Style */
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+/* MAP Style*/
+
+#map {
+  height: 800px;
+}
+
+
+/* Filter List Style */
+
+ul {
+  height: 250px;
+  overflow-y: auto;
+  list-style: none;
+  padding: 0;
+}
+
+.station-list {
+  height: inherit;
+}
+
+.station-list > li {
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.station-item {
+  width: 100%;
+}
+
+.initial {
+  border-radius: 2em;
+  padding: 5px 10px;
+  margin: 0 5px;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  display: inline-block;
+}
+
+
+/* Line Category Style */
+/* Infowindow Line Category Style */
+#expo {
+  background-color: #428bca;
+}
+
+#millenium {
+  background-color: #d9534f;
+}
+
+#canada {
+  background-color: #5cb85c;
+}
+
+#filter_station {
+  width: 100%;
+}
+
+.line-wrapper {
+  width: 100%;
+}
+
+.initial span {
+  display: block;
+}
+
+.selected {
+  line-height: 1.7 !important;
+  font-size: 1.8em;
+  text-decoration: overline;
+}
+
+
+/* Header */
+
+.list-view {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50px;
+  height: 100%;
+  min-height: 900px !important;
+  z-index: 10;
+}
+
+.items:hover {
+  background-color: pink;
+}
+
+.search-bar {
+  width: 200px !important;
+  -webkit-transition: width linear 0.2s;
+  border-right: 0 !important;
+}
+
+.search-focused {
+  width: 300px !important;
+  transition: width linear 0.3s;
+  -webkit-transition: width linear 0.2s;
+}
+
+.search-wrap {
+  text-align: right !important;
+  float: right;
+}
+
+.input-group-btn {
+  z-index: 9999;
+}
+
+.navbar-brand {
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.input-group {
+  width: 200px;
+  padding: 15px 0 15px 0;
+}
+
+.input-group-btn button {
+  border-left: 0 !important;
+}
+
+.input-group-btn span {
+  visibility: hidden;
+}
+
+.input-group-btn button:focus, .input-group-btn button:active, .input-group-btn button:hover {
+  background-color: #fff !important;
+  box-shadow: none !important;
+  border-color: #ccc !important;
+  outline: none !important;
+}
+
+.form-control:focus, .form-control:active, .form-control:hover {
+  border-color: #ccc !important;
+  box-shadow: none;
+  outline: none !important;
+}
+
+
+/* Control Panel Style */
+
+.control-panel {
+  background: #fff;
+}
+
+.control-panel input[type=radio] {
+  display: none;
+}
+
+.control-panel label {
+  height: 40px;
+  color: white;
+  line-height: 2.7;
+}
+
+.control-panel label:hover {
+  background-color: #333;
+  opacity: 0.4;
+  cursor: pointer;
+  transition: background-color 1s;
+}
+
+.bg-all {
+  background-color: #f89406;
+}
+
+.bg-millenium {
+  background-color: #d9534f;
+}
+
+.bg-canada {
+  background-color: #5cb85c;
+}
+
+.bg-expo {
+  background-color: #428bca;
+}
+
+
+/* Search List Line Color */
+
+.millenium {
+  background-color: #d9534f;
+}
+
+.canada {
+  background-color: #5cb85c;
+}
+
+.expo {
+  background-color: #428bca;
+}
+
+.station-item:before {
+  content: '\00a0\00a0\00a0';
+}
+
+/* Error Handler */
+.errorHandler {
+  position:fixed;
+  width: 100%;
+  height:100px;
+  left:0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  font-size: 2em;
+  color: #f00;
+  z-index: 10000;
+  top:0;
+  text-align: center;
+  background: #fff;
+  border: 2px solid #ccc;
+  transition: height ease 0.5s
+}
+
+.errorBtn {
+  text-align: center;
+  font-size: 20px;
+}
+
+.detail-open {
+  height: 250px;
+  transition: height ease 0.5s
+}
+
+.errorContent {
+  font-size: 14px;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right:0;
+}
+/* Apply this css when the window width is less than 780px */
+
+@media only screen and (max-width: 780px) {
+  /* Styles */
+  .input-group, .navbar-brand {
+    width: 100%;
+  }
+  .navbar-brand {
+    text-align: center;
+  }
+  .search-bar {
+    width: 100% !important;
+  }
+  .list_view {
+    top: 100px;
+  }
+}
