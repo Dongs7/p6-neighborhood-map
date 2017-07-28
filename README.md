@@ -1,5 +1,5 @@
 # FSND P6 - Neighbor Map
-Build an Item Catalog application
+Neighbot Map 
 
 ![](https://github.com/Dongs7/img/blob/master/p6.png)
 
