@@ -1,5 +1,5 @@
-# FSND P6 - Neighbor Map 
-Neighbor Map - <a href="https://neighbormap.herokuapp.com/">See live demo</a>
+# Udacity FSND P6 - Neighborhood Map 
+Neighborhood Map - <a href="https://neighbormap.herokuapp.com/">See live demo</a>
 
 ![](https://github.com/Dongs7/img/blob/master/p6.png)
 
